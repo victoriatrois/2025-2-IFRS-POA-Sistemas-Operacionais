@@ -51,11 +51,10 @@ Mecânico é mais primitivo que analógico, o analógico pode ser automatizado.
 O programa:
 
 1. executava um programa por vez
-2. x
 
 O programador programava:
 
-1. A vcrga do programa em memória
+1. A carga do programa em memória
 2. a varredura dos periféricos de entrada para busca de dados
 3. o programa
 4. o envio dos resultados para os periféricos de saída byte a byte
@@ -100,7 +99,7 @@ Os sistemas fornecem bibliotecas que encapsulavam o acesso aos periféricos
 
 Uma camada de abstração, que é um software e que age como mediador entre o hardware os programas com os quais o usuário final interage.
 
-Camada de software que dá acesso do hardware ao usuário.
+Camada de software que dá acesso de forma homogênea do hardware ao usuário.
 
 ### O que é um driver?
 
@@ -140,8 +139,17 @@ m - 60s
 busca, decodifica, executa
 
 interrupões quebram o cliclo de instrução do processador
+quando o computador fica em estado "idle", a instrução que ele está decodificando está vazia.
+
+Interrupções são processos de alta prioridade
+
+Aplicações não tem acesso ao hardware visto que isso é papel do sistema operacional, logo as aplicações se conectam com o SO e ele se conecta com o hardware.
+
+Tais processos são identificados por flags que definem o nível de acesso ao hardware.
 
 ##### Gerencia de memória
+
+Memórias alocadas para um determinado processo devem ser protegidas e mantidas de forma isolada de modo que um outro processo não as utilize.
 
 ##### Gerencia de dispositivos
 
@@ -152,7 +160,9 @@ ponto de montagem vs C, F, etc.
 
 ##### Gerencia de proteção
 
+Firewall, multi usuários (acessar de forma simultânea o sistema operacional)
+
 ## Perguntas
 
-1. Ambiente gráfico vs. sistema operacional
-2. O ambiente gráfico não gerencia recursos, ele é uma camada intermádiária entre o sistema operacional e o usuário final.
+_Ambiente gráfico vs. sistema operacional_
+O ambiente gráfico não gerencia recursos, ele é uma camada intermádiária entre o sistema operacional e o usuário final.
