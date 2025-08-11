@@ -59,42 +59,6 @@ O programador programava:
 3. o programa
 4. o envio dos resultados para os periféricos de saída byte a byte
 
-#### Anos 50
-
-Os sistemas fornecem bibliotecas que encapsulavam o acesso aos periféricos
-
-#### 1961
-
-#### 1965
-
-#### 1969
-
-#### 1981
-
-#### 1984
-
-#### 1985
-
-#### 1988
-
-#### 1991
-
-#### 1993
-
-#### 1995
-
-#### 1999
-
-#### 2001
-
-#### 2005
-
-#### 2007
-
-#### 2010
-
-#### 2015
-
 ### O que é um sistema operacional?
 
 Uma camada de abstração, que é um software e que age como mediador entre o hardware os programas com os quais o usuário final interage.
