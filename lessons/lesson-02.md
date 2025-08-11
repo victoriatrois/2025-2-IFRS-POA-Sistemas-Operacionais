@@ -136,3 +136,23 @@ cowsay `<entrada>`
 bb
 
 arte asc
+
+## Lesson activities
+
+1. Procure outro comando da categoria funny commands
+2. Pesquise como instalar o comando usando o `-apt install`
+3. Instale o comando escolhido
+4. Execute o comando escolhido
+5. Capture evidências
+6. Poste as evidência no forum: <https://moodle.poa.ifrs.edu.br/mod/forum/view.php?id=494579>
+
+### Como instalar um comando usando o `-apt install`
+
+`sudo apt install <command/program name here>` — on Debian, Ubuntu and Mint
+`sudo yum install <command/program name here>` — on CentOS
+
+### Comandos que instalarei
+
+1. oneko <https://harshkahate.medium.com/cool-linux-commands-3407197e8c6#:~:text=3.-,oneko,-This%20one%20is>
+2. fortune + xcowsay <https://www.tecmint.com/funny-linux-commands/#:~:text=Art%20of%20Text-,To,-combine%20the%20fortune>
+3. aafire <https://www.tecmint.com/funny-linux-commands/#:~:text=Love%20TecMint.com%22-,15.%20aafire%20Command,-The%20aafire%20is>
