@@ -154,5 +154,16 @@ arte asc
 ### Comandos que instalarei
 
 1. oneko <https://harshkahate.medium.com/cool-linux-commands-3407197e8c6#:~:text=3.-,oneko,-This%20one%20is>
-2. fortune + xcowsay <https://www.tecmint.com/funny-linux-commands/#:~:text=Art%20of%20Text-,To,-combine%20the%20fortune>
-3. aafire <https://www.tecmint.com/funny-linux-commands/#:~:text=Love%20TecMint.com%22-,15.%20aafire%20Command,-The%20aafire%20is>
+   oneko não deu bom porque não unstalei um X server
+2. aafire <https://www.tecmint.com/funny-linux-commands/#:~:text=Love%20TecMint.com%22-,15.%20aafire%20Command,-The%20aafire%20is>
+
+### Tentar rodar
+
+fortune + xcowsay <https://www.tecmint.com/funny-linux-commands/#:~:text=Art%20of%20Text-,To,-combine%20the%20fortune>
+
+### Passo a passo que executei para realizar a tarefa
+
+1. apt update
+2. apt install sudo
+3. sudo apt install aalib-bin
+4. aafire
