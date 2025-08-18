@@ -109,3 +109,28 @@ Na verdade o processo é duplicado
 JavaScript does not have traditional threads like C, Java, or Python.
 
 In Node.js: You can use the Worker Threads module (worker_threads) to run JavaScript in parallel threads, also with message passing.
+
+## Atividade
+
+<https://moodle.poa.ifrs.edu.br/mod/forum/view.php?id=496082>
+
+Modifique o código-fonte `calcula.cpp`, atualmente estruturado para executar dois cálculos de forma sequencial, de modo que os cálculos sejam executados utilizando threads, visando medir ganhos de desempenho.
+
+1. Altere a implementação do programa para que cada cálculo seja executado em uma thread distinta.
+   Meça o tempo de execução nas seguintes versões:
+
+   1. Versão sequencial (original).
+   2. Versão paralela (com threads).
+
+2. Publique no fórum as evidências da execução, incluindo:
+3. Capturas de tela (ou registros) do tempo medido para cada versão.
+4. Comparação e breve análise dos resultados.
+   Execute o programa:
+   1. Em sua máquina local.
+   2. No servidor aula.inf.poa.ifrs.edu.br.
+
+Observações:
+
+Obs. 1: As funções implementadas exigem parâmetros; portanto, ao criar a thread, será necessário passar o parâmetro.
+
+Obs. 2: Antes de recorrer a ferramentas de Inteligência Artificial para resolver o problema, tente desenvolvê-lo individualmente. Somente após obter sua própria solução, compare-a com a gerada pela ferramenta de I.A., identificando semelhanças e diferenças.
