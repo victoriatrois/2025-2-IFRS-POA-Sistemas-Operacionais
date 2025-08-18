@@ -5,25 +5,28 @@ VIM - é um editor de texto muito poderoso, mas que precisa de um pouco de twiks
 nano é um mais amigável
 
 para criármos um arquivo com o nano rodamos:
-nano <nome do arquivo>.<extenção do arquivo>
+nano `<nome do arquivo>`.`<extenção do arquivo>`
 
-#incluce "stdio.h"
+```
+c
+#inclue "stdio.h"
 
-int main() {
-printf("Olá mundo");
+  int main() {
+  printf("Olá mundo");
 
-return 0;
+  return 0;
 }
+```
 
-cat <nome do arquivo>.<extenção do arquivo> abre o arquivo em modo de leitura
-tac <nome do arquivo>.<extenção do arquivo> abre o arquivo ao contrário em modo de leitura (útil para ver logs)
+cat `<nome do arquivo>`.`<extenção do arquivo>` abre o arquivo em modo de leitura
+tac `<nome do arquivo>`.`<extenção do arquivo>` abre o arquivo ao contrário em modo de leitura (útil para ver logs)
 
-| grep <busca> - usado com alguns comandos, como o ls -la, executando uma busca
+| grep `<busca>` - usado com alguns comandos, como o ls -la, executando uma busca
 
 sudo apt install gcc
-gcc <nome do arquivo>.<extensão do arquivo> -o <nome do programa executável>
+gcc `<nome do arquivo>`.`<extensão do arquivo>` -o `<nome do programa executável>`
 
-mv <nome atual> <novo nome> renomear arquivo
+mv `<nome atual>` `<novo nome>` renomear arquivo
 
 no linux não existe extenção, o que diferencia um arquivo executável é a permissão de execução um x ao fim da lista de permisões
 
@@ -100,7 +103,6 @@ Caminhos de execução, executtos concorrentemente na memória compartilhada do 
 
 Maneira utilizada para "criar" um novo processo.
 Na verdade o processo é duplicado
-
 
 ## Threads in other programming Languages
 
