@@ -7,8 +7,7 @@ nano é um mais amigável
 para criármos um arquivo com o nano rodamos:
 nano `<nome do arquivo>`.`<extenção do arquivo>`
 
-```
-c
+```c
 #inclue "stdio.h"
 
   int main() {
@@ -68,11 +67,11 @@ Prazo de tempo para execução - Sistemas de Tempo Compartilhado
 
 #### Estados das tarefas - Sistema de Tempo Compartilhado
 
-           - - - - -
-          ↓          |
-
+****\_\_\_****- - - - -
+****\_\_****↓ |
 nova - pronta - executando - terminada
-| | - suspensa -
+****\_\_****| |
+****\_\_****- suspensa -
 
 No Linux as operações de troca de contexto para a plataforma Intel
 x86 estão definidas através de diretivas em Assembly no arquivo
