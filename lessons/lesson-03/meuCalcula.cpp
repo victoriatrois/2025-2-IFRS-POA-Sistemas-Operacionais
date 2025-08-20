@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+#include <pthread.h>
 
 double soma_massiva(long long limite) {
   double soma = 0.0;
@@ -30,25 +31,21 @@ double aproximar_pi(long long iteracoes) {
 }
 
 int main() {
-  // TODO: criar duas threads
-
-  // TODO: armazenar a execução da soma massiva numa thread
-  // TODO: armazenar a execução da aproximação de PI na outra thread
-
   long long n1 = 5000000000;
   long long n2 = 10000000000;
 
-  printf("Iniciando o Procesos de calculos massivos Sequencial...\n");
+  // declarar variáveis para as threads
+  pthread_t thread1, thread2;
 
-  printf("Calculos Soma massivos ...\n"); // inicia a soma massiva
-  double resultado1 = soma_massiva(n1);
-  printf("Resultado da soma massiva: %.6f\n", resultado1); // finaliza a soma massiva
+  // TODO: criar uma thread para a execução da soma massiva
+  pthread_create(&thread1, NULL, (void *(*)(void *))soma_massiva, (void *)&n1);
 
-  printf("Calculos aproxima��o do Pi ...\n"); // inicia o cálculo de PI
-  double resultado2 = aproximar_pi(n2);
-  printf("Aproxima��o de Pi: %.12f\n", resultado2); // finaliza o cálculo de PI
+  // TODO: criar uma thread para a execução da aproximação de PI na outra thread
+  pthread_create(&thread2, NULL, (void *(*)(void *))aproximar_pi, (void *)&n2);
 
-  printf("Calculos finalizados.\n");
+  // TODO: executar as threads em paralelo
+  pthread_join(thread1, NULL);
+  pthread_join(thread2, NULL);
 
-  return 0;
+  pthread_exit(NULL); // se usei o pthread_join, no fim da main uso return 0 ou pthread_exit?
 }
