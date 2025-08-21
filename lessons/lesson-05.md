@@ -1,1 +1,3 @@
-# Aula 05 - Avaliação (01)
+# Aula 05 - Comunicação entre processos, Condição de corrida, regiões críticas, exclusão, mútua, semáforos, mutexes
+
+passou para 07 Avaliação (01)
