@@ -36,7 +36,6 @@
 - cd -: volta para o diretório anterior
 - cd ..: sobe um nível
 - .: diretório atual
-- ./`<arquivo>`: executa arquivo no diretório atual
 - /: raiz do sistema
 - /home/`<username>`: diretório home do usuário
 
@@ -81,6 +80,7 @@
 
 - gcc `<arquivo.c>` -o `<executável>`: compila código C
 - g++ `<arquivo.cpp>` -o `<executável>`: compila código C++
+- ./`<arquivo>`: executa arquivo no diretório atual
 - make: automatiza compilação
 
 ## Funny/Entertainment Commands
