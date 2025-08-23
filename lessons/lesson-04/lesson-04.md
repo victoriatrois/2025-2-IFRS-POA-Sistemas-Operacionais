@@ -93,5 +93,5 @@ kill -9 `<proccess id>` (-9 é parecido com -f)
 ### priorizando processos
 
 top - gerenciador de tarefas
-top h - tem que ser instalado
-apt install toph
+htop - tem que ser instalado
+apt install htop
