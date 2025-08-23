@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-#include <pthread.h>
+#include <pthread.h> // importei a biblio para threads
 
 double soma_massiva(long long limite) {
   double soma = 0.0;
@@ -21,7 +21,7 @@ double aproximar_pi(long long iteracoes) {
     if (i % 2 == 0) {
       termo = 1.0 / (2.0 * i + 1.0);
     } else {
-        termo = -1.0 / (2.0 * i + 1.0);
+      termo = -1.0 / (2.0 * i + 1.0);
     }
 
     pi += termo;
@@ -30,22 +30,27 @@ double aproximar_pi(long long iteracoes) {
   return pi * 4.0;
 }
 
+void *soma_massiva_pthread(void *arg) { soma_massiva(*(long long *)arg); return NULL; }
+void *aproximar_pi_pthread(void *arg) { aproximar_pi(*(long long *)arg); return NULL; }
+
 int main() {
   long long n1 = 5000000000;
   long long n2 = 10000000000;
 
-  // declarar variáveis para as threads
   pthread_t thread1, thread2;
 
-  // TODO: criar uma thread para a execução da soma massiva
-  pthread_create(&thread1, NULL, (void *(*)(void *))soma_massiva, (void *)&n1);
+  // printf("Iniciando o Procesos de calculos massivos Sequencial...\n");
+  printf("Iniciando os Procesos de calculos massivos e aproximação de Pi de forma paralela...\n");
 
-  // TODO: criar uma thread para a execução da aproximação de PI na outra thread
-  pthread_create(&thread2, NULL, (void *(*)(void *))aproximar_pi, (void *)&n2);
+  printf("Calculos Soma massivos ...\n");
+  pthread_create(&thread1, NULL, soma_massiva_pthread, &n1);
 
-  // TODO: executar as threads em paralelo
+  printf("Calculos aproximação do Pi ...\n");
+  pthread_create(&thread2, NULL, aproximar_pi_pthread, &n2);
+
   pthread_join(thread1, NULL);
   pthread_join(thread2, NULL);
+  printf("Calculos finalizados.\n");
 
-  pthread_exit(NULL); // se usei o pthread_join, no fim da main uso return 0 ou pthread_exit?
+  return 0;
 }
