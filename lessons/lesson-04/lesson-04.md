@@ -95,3 +95,39 @@ kill -9 `<proccess id>` (-9 é parecido com -f)
 top - gerenciador de tarefas
 htop - tem que ser instalado
 apt install htop
+
+## Atividades
+
+### Atividade 01
+
+Faça um script que peça dois números ao usuário e exiba um menu de escolha, onde 1 - Soma, 2 - Subtração, 3 - Multiplicação e 4 - Divisão.
+
+De acordo a escolha do usuário, o script deverá realizar o cálculo desejado.
+
+entregar em <https://moodle.poa.ifrs.edu.br/mod/forum/view.php?id=483061>
+
+```bash
+
+```
+
+### Atividade 02
+
+Faça um script que peça ao usuário um nome de arquivo e crie esse arquivo no diretório atual.
+
+Para criar o arquivo pesquise o comando "touch".
+
+entrega em <https://moodle.poa.ifrs.edu.br/mod/forum/view.php?id=483062>
+
+### Atividade 03
+
+Faça um script que solicite um número ao usuário e exiba a tabuada desse número de 1 a 10.
+
+entrega em <https://moodle.poa.ifrs.edu.br/mod/forum/view.php?id=483063>
+
+### Atividade 04
+
+aça um script que peça dois números ao usuário e exiba um menu de escolha, onde 1 - Soma, 2 - Subtração, 3 - Multiplicação e 4 - Divisão.
+
+De acordo a escolha do usuário, o script deverá realizar o cálculo desejado.
+
+entrega em <https://opulent-halibut-wjpwxpvgwq52gg55.github.dev/>
