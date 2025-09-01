@@ -38,4 +38,40 @@ programas são estáticos, tarefas têm estados
 tarefas são executados por processos (via fork) ou threads
 
 a thread compartilha variáveis, os processos não
-Processos podem ser intependentes ou cooperaticos
+Processos podem ser intependentes ou cooperativos
+
+## Atividades
+
+### Atividade 1
+
+No servidor aula.inf.poa.ifrs.edu.br:
+
+1. Fazer um Shell Script que gere um arquivo com todos valores pares, de 1 até 3.000.000.
+
+2. Fazer outro Shell Script que gere um arquivo com todos valores ímpares, de 1 até 3.000.000.
+
+3. Colocar os dois script para rodar, um em cada Terminal.
+
+4. Apresentar (print screen) os scripts em execução.
+
+#### Pares
+
+```bash
+#!/bin/bash
+
+for ((i=2; i<=3000000; i+=2))
+do
+  echo "$i" >> geraPares.txt
+done
+```
+
+#### Ímpares
+
+```bash
+#!/bin/bash
+
+for ((i=1; i<=3000000; i+=2))
+do
+  echo "$i" >> geraImpares.txt
+done
+```
