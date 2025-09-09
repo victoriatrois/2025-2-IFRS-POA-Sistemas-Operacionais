@@ -4,9 +4,9 @@
 
 - clear: limpa a tela
 - ls: lista arquivos
+  - -la: lista todos os arquivos, inclusive ocultos, com detalhes
 - man `<command>`: documentação do comando
-- ls -la: lista todos os arquivos, inclusive ocultos, com detalhes
-- q: sair/quit
+- q: sair/quit (de um meno interativo)
 - history: mostra o histórico de comandos
 - `<inicial>` + tab: autocompleta comandos
 - echo: imprime texto na tela
@@ -32,12 +32,11 @@
 ## Navigation Commands
 
 - cd: muda de diretório
-- cd ~ ou cd: volta para o diretório home
+- cd ~ ou cd ou /home/`<username>`: volta para o diretório home
 - cd -: volta para o diretório anterior
 - cd ..: sobe um nível
-- .: diretório atual
+- .:- diretório atual
 - /: raiz do sistema
-- /home/`<username>`: diretório home do usuário
 
 ## File/Directory Management
 
@@ -56,6 +55,10 @@
 - grep `<busca>` `<arquivo>`: busca por texto em arquivos
 - find `<caminho>` -name `<padrão>`: busca arquivos por nome
 - chmod `<permissões>` `<arquivo>`: altera permissões de arquivos
+  - u+x - atribui ao usuário a permissão de execução
+  - g+x - atribui ao grupo a permissão de execução
+  - o+x - atribui a outros a permissão de execução
+  - a+x / +x - atribui a todos a permissão de execução
 - chown `<usuário>:<grupo>` `<arquivo>`: altera dono de arquivos
 
 ## Process Management
@@ -69,6 +72,7 @@
 - bg: coloca processo em background
 - fg: traz processo para foreground
 - jobs: lista processos em background
+- ctrl+z: suspende a execução de um processo (muda o seu estado de em execução para parado)
 
 ## Editing/Text
 
