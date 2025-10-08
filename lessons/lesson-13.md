@@ -1,3 +1,1 @@
-# Aula 13 - strutura Linux. Comandos
-
-Básicos.
+# Aula 13 - 22/10 - prova 02
