@@ -1,3 +1,5 @@
-# Aula 09 - Gerenciamento de memória
+# Aula 09 - Definições de prioridades
 
-Acesso a Memória. Algoritmos.
+A definição
+
+top mostra as tarefas em execução, o NI representa o NICE de uma tarefa.

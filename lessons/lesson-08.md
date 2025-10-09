@@ -24,7 +24,7 @@ A resposta vem imediatamente
 
 ##### Tarefas interativas
 
-Sistemas que recebem eventos externos (do usuário ou de outros sistemas) que devem responder rapidamente, porém não necessáriamente - previsão do tempo
+Sistemas que recebem eventos externos (do usuário ou de outros sistemas) que devem responder rapidamente, porém não necessáriamente
 
 ##### Tarefas em lote (Batch)
 
